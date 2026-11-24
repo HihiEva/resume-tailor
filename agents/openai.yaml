@@ -1,4 +1,4 @@
 interface:
   display_name: "简历经历定制与申请草稿"
-  short_description: "按JD分层确认实习、项目和条目，生成量化满行简历，按需准备申请草稿"
-  default_prompt: "使用 $resume-tailor，根据我提供的 JD 和当前 LaTeX 简历，先分层让我选择实习、项目及其条目，确认后只修改这两栏，核对量化结果、一页满行排版和条目末尾无句号；需要邮件时只保存草稿。"
+  short_description: "从initial复用条目，在tmp按JD定制简历，审核后注释回存并准备申请草稿"
+  default_prompt: "使用 $resume-tailor，先读 initial/resumeCh.tex 的正文和注释并让我选择经历及条目，确认后在 tmp/resumeCh.tex 定制一页量化满行简历，条目末尾不加句号；我明确审核通过后将新条目注释回存 initial，去重保留；需要邮件时只保存草稿。"
